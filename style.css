@@ -6,12 +6,16 @@
 
 section {
   height: 100vh;
-  background-color: rgb(39, 41, 68);
-  font-family: sans-serif;
+  background-color: rgb(27, 32, 102);
+  font-family: 'Bangers', cursive, sans-serif;
+}
+button{
+  font-family:'Neucha', cursive, sans-serif;
+  font-size: 1000px;
 }
 
 .score {
-  color: rgb(224, 224, 224);
+  color: rgb(219, 214, 214);
   height: 20vh;
   display: flex;
   justify-content: space-around;
@@ -47,7 +51,7 @@ section {
   border: none;
   color: rgb(224, 224, 224);
   font-size: 20px;
-  background: rgb(45, 117, 96);
+  background: rgb(12, 9, 8);
   border-radius: 3px;
   cursor: pointer;
 }
@@ -65,11 +69,21 @@ section {
   font-size: 50px;
 }
 
+
 .hands,
-.options {
+.options{
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+#action-button {
+    margin-top:30px;
+    margin-left: 230px;
+    display:block;
+    justify-content: space-around;
+    align-items: center;
+  
 }
 
 .player-hand {

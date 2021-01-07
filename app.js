@@ -103,10 +103,23 @@ const game = () => {
           pScore++;
           updateScore();
           return;
-        }
-      }
+        };
+      };
+      
     };
-  
+    document.getElementById('action-button').addEventListener('click', function (e) {
+        alert('😂 Your Game Is About To Be Reset 😂');
+        //Updating Scores to a big fat 0 in memory
+        pScore = 0;
+        cScore = 0;
+    
+        //Same on the front-end scoreboard    
+        const playerScore = document.querySelector(".player-score p");
+        const computerScore = document.querySelector(".computer-score p");
+        playerScore.textContent = pScore;
+        computerScore.textContent = cScore;
+    });
+    
     //Is call all the inner function
     startGame();
     playMatch();
